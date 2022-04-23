@@ -1,0 +1,225 @@
+.logs{
+    border: 1px solid gray;
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+    font-family: verdana;
+    background-color:#171010;
+    margin-left: 150px;
+    margin-right: 150;
+}
+
+.sosmed{
+    grid-area: sosmed;
+    justify-content: center;
+    margin-right: 50px;
+    margin-top: 90px;
+}
+
+main{
+    grid-area: main;
+    margin-top: 180px;
+    margin-left: 0px;
+    margin-right: 100px;
+}
+
+.foto{
+    grid-area: foto;
+   
+}
+
+.skill{
+    grid-area: skill;
+    margin-top: 160px;
+    text-align: center;
+}
+
+.items-center{
+    align-items: center;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.row-rev{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+}
+
+.col-rev{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+
+
+.fg1{
+    flex: 1 1 0;
+}
+
+.fg2{
+    flex: 2 2 0;
+}
+
+.fg3{
+    flex: 3 3 0;
+}
+
+.pt5{
+    padding-top: 5px;
+}
+
+.label{
+    padding-top: 5px;
+    font-family: arial;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.font{
+    font-size: 14px;
+}
+
+h1{   
+    color: white;
+}
+
+h2{
+    color:  white;
+}
+
+.subtitle{
+    color: white;
+}
+
+.normal-text{
+    color: white;
+}
+
+.btn{
+    background-color: #EDEDED;
+    color: black;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 40px;
+}
+
+.btn:hover{
+    background-color: rgb(251, 255, 29);
+    color: rgba(7, 61, 0, 0.781);
+    font-weight: bold;
+}
+
+a{
+    color: black;
+}
+
+.nav-icon{
+    font-size: 25px;
+}
+
+.sosmed-logo:hover{
+    color: #22fa0f;
+}
+
+.sosmed-logo{
+    margin-top:20px;
+    border: 1px solid rgb(9, 51, 0);
+    padding: 8px;
+    background-color: #EDEDED;
+    border-radius: 100%;
+    align-items: center;
+}
+
+.outline{
+    border: 3px solid #DDDDDD;
+    margin: 10px;
+    border-radius: 10px; 
+    align-items: center;
+}
+
+.skills-icon{
+    border: 5px solid #EDEDED;
+    border-radius: 100%;
+    width: 70px;
+    background-color: #423F3E;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: courier;
+}
+
+img{
+    width: 300px;
+    border: 1px solid rgb(0, 0, 0);  
+    margin-right: 50px; 
+    border-radius: 20%;
+    height: 390px;
+    margin-top: 100px;
+}
+
+
+@media screen and (max-width:500px) {
+    body{
+        display:grid; 
+        grid-template: auto auto / auto auto;
+        grid-template-areas: " main   "
+                             " foto   "
+                             " skill  "
+                             " sosmed ";
+        margin-right: 0px;
+        margin-left: 0;
+    }
+
+    main{
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .nav-icon{
+        font-size: 30px;
+    }
+    
+    .sosmed{
+        flex-direction: row;
+        margin-top: 0;
+        margin-bottom: 25px;
+        margin-right: 0px;
+        max-width: 600px;
+    }
+
+    .skill{
+ 
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    img{
+        width: 100%;
+        margin-left: 50px;
+        margin-top: 50px;
+    }
+
+    .sosmed-logo{
+        margin: 20px;
+        margin-top: 40px;
+    }
+   
+}
+
+
